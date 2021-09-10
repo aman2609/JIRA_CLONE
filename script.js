@@ -91,10 +91,10 @@ addbtn.addEventListener("click",function(){
     }
     let taskInnerContainer=div.querySelector(".task-inner-container");
     taskInnerContainer.addEventListener("keydown",function(e){
-        if(e.key=="Enter"){
+        if(e.key== "Enter"){
             // console.log(e.currentTarget.innerText);
             // console.log(ticketColor);
-            let id=uid();
+            let id=Date.now();
             let task=e.currentTarget.innerText;
             let allTickets=JSON.parse(localStorage.getItem("AllTickets"));
 
